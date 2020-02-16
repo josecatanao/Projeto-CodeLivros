@@ -58,7 +58,7 @@ header>h1{
     height: 300px;
     position: relative;
     top: -310px;
-    margin: 0 auto;
+    margin: 35px auto;
     display: flex;
     justify-content: space-around;
 }
@@ -67,10 +67,14 @@ header>h1{
     flex-direction: column;
     justify-content: space-around;
     border-radius: 5px;
-    height: 370px;
+    height: 390px;
     text-align: center;
     background-color:white;
     padding:5px;
+    margin-bottom: 15px;
+}
+.card>a{
+  color: rgb(14, 161, 141);
 }
 .card>img{
     width: 180px;
@@ -105,7 +109,7 @@ div i{
     width: 1200px;
     height: 300px;
     position: relative;
-    margin: 0 auto;
+    margin: 35px auto;
     top: -210px;
     display: flex;
     justify-content: space-around;
@@ -117,7 +121,7 @@ div i{
     width: 1200px;
     height: 300px;
     position: relative;
-    margin: 0 auto;
+    margin: 35px auto;
     top: -110px;
     display: flex;
     justify-content: space-around;
@@ -264,4 +268,66 @@ div i{
     .footer__nav {
       flex: 2 0px;
     }
+  }
+
+  .modal {
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    top: 23%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(56, 74, 116, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modal>img{
+    width: 180px;
+    margin-top: 70px;
+    margin-left: 10px;
+    height: 230px;
+    float: left;
+  }
+  .texto>h1{
+    color: white;
+    font-size: 40px;
+  }
+  .texto{
+    width: 350px;
+    margin:70px 0px 0px 50px;
+    text-decoration: none; 
+  }
+
+  .texto>ul{
+    list-style: none;
+    color: white;
+    font-size: 20px;
+  }
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
   }
