@@ -288,6 +288,7 @@ div i{
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+    border-radius: 10px;
   }
 
   .modal>img{
@@ -326,8 +327,22 @@ div i{
     text-align: center;
     line-height: 30px;
     margin-top: 5px;
-    background: #ff4545;
+    background: red;
     border-radius: 50%;
     font-size: 16px;
-    color: #8d0000;
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
   }
+
+  
+
+
+
+
+
+
+
+  
+  
+  
