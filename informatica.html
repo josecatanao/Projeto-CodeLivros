@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - CodeLivros</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha256-nZaxPHA2uAaquixjSDX19TmIlbRNCOrf5HO1oHl5p70=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/347135fd92.js" crossorigin="anonymous"></script>
     <title>Hello, world!</title>
 </head>
@@ -15,13 +16,12 @@
         <a href="index.html">Início</a>
         <a href="literatura.html">Literatura</a>
         <a href="informatica.html">Informática</a>
-        <a href="graficos.html">Gráfico</a>
         <a href="">Login</a>
     </nav>
 </header>
 
 <section id="bloco1">
-    <h1>Os melhores livros de Informatica você encontra Aqui!</h1>
+    <h1>livros mais vendidos de Informatica</h1>
 </section>
 
 <section id="bloco2">
@@ -102,309 +102,36 @@
           </div>
          <div><input type="button" value="comprar" class="botão"></div>
      </div>
-     <div class="card">
-         <img src="fotos/li4.jpg">
-         <p>PHP </p>
-         <h4> R$:100,00 </h4>
-         <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <a href="#abrirModal4">Descrição</a>
-
-          <div id="abrirModal4" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li4.jpg" alt="">
-            <div class="texto">
-              <h1>PHP</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-         <div><input type="button" value="comprar" class="botão"></div>
-    </div>
 </section>
 
-<section id="bloco3">
- <div class="card">
-     <img src="fotos/li5.jpg">
-     <p>Python do zero</p>
-     <h4> R$:200,00 </h4>
-     <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <a href="#abrirModal5">Descrição</a>
-
-          <div id="abrirModal5" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li5.jpg" alt="">
-            <div class="texto">
-              <h1>Python do zero</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-     <div><input type="button" value="comprar" class="botão"></div>
+<div>
+  <div>
+    <canvas id="barrainformatica"></canvas>
   </div>
- <div class="card">
-     <img src="fotos/li6.jpg">
-     <p>Python</p>
-     <h4> R$:250,00 </h4>
-     <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <a href="#abrirModal6">Descrição</a>
-
-          <div id="abrirModal6" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li6.jpg" alt="">
-            <div class="texto">
-              <h1>Python</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-     <div><input type="button" value="comprar" class="botão"></div>
+  <div>
+    <canvas id="pizzainformatica"></canvas>
   </div>
- <div class="card">
-     <img src="fotos/li7.jpg">
-     <p>Lógica de Programação </p>
-     <h4> R$:390,00 </h4>
-     <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <a href="#abrirModal7">Descrição</a>
+</div>
 
-          <div id="abrirModal7" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li7.jpg" alt="">
-            <div class="texto">
-              <h1>Lógica de Programação</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-     <div><input type="button" value="comprar" class="botão"></div>
+
+<script src="graficos.js"></script>
+
+<footer>
+  <div>
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+    <a href="#">Linkedin</a>
   </div>
- <div class="card">
-     <img src="fotos/li8.jpg">
-     <p>Node js</p>
-     <h4> R$:120,00 </h4>
-     <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <a href="#abrirModal8">Descrição</a>
-
-          <div id="abrirModal8" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li8.jpg" alt="">
-            <div class="texto">
-              <h1>Node js</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-     <div><input type="button" value="comprar" class="botão"></div>
-    </div>
-</section>
-
-<section id="bloco4">
- <div class="card">
-     <img src="fotos/li9.jpg">
-     <p>Css grid layout</p>
-     <h4> R$:190,00 </h4>
-     <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <a href="#abrirModal9">Descrição</a>
-
-          <div id="abrirModal9" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li9.jpg" alt="">
-            <div class="texto">
-              <h1>Css grid layout</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-     <div><input type="button" value="comprar" class="botão"></div>
+  <div>
+    <p>@Untiled All rights reserved</p>
   </div>
- <div class="card">
-     <img src="fotos/li10.jpg">
-     <p>HTML 5</p>
-     <h4> R$:58,00</h4>
-     <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <a href="#abrirModal10">Descrição</a>
-
-          <div id="abrirModal10" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li10.jpg" alt="">
-            <div class="texto">
-              <h1>HTML 5</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-     <div><input type="button" value="comprar" class="botão"></div>
+  <div>
+    <a href="#">LOCALIZAÇÃO</a>
   </div>
- <div class="card">
-     <img src="fotos/li11.jpg">
-     <p>Construindo na Web</p>
-     <h4> R$:200,00</h4>
-     <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <a href="#abrirModal11">Descrição</a>
-
-          <div id="abrirModal11" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li11.jpg" alt="">
-            <div class="texto">
-              <h1>Construindo na Web</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-     <div><input type="button" value="comprar" class="botão"></div>
-  </div>
- <div class="card">
-     <img src="fotos/li12.jpg">
-     <p>PHP na Prática</p>
-     <h4> R$:40,00 </h4>
-     <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <a href="#abrirModal12">Descrição</a>
-
-          <div id="abrirModal12" class="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <img src="fotos/li12.jpg" alt="">
-            <div class="texto">
-              <h1>PHP na Prática</h1>
-              <ul>
-                <li>Páginas:150</li>
-                <li>Ano: 2020</li>
-                <li>Autor: jhon duker</li>
-                <li>Lançamento: 2019</li>
-                <li>Editora: Alta Book</li>
-                <li>Estado: Novo</li>
-              </ul>
-          </div>
-          </div>
-     <div><input type="button" value="comprar" class="botão"></div>
-  </div>
-</section>
-
-
-<footer class="footer">
- 
- <ul class="footer__nav">
-   <li class="nav__item">
-     <h2 class="nav__title">Media</h2>
-
-     <ul class="nav__ul">
-       <li>
-         <a href="#">Online</a>
-       </li>
-
-       <li>
-         <a href="#">Print</a>
-       </li>
-           
-       <li>
-         <a href="#">Alternative Ads</a>
-       </li>
-     </ul>
-   </li>
-   
-   <li class="nav__item nav__item--extra">
-     <h2 class="nav__title">Technology</h2>
-     
-     <ul class="nav__ul nav__ul--extra">
-       <li>
-         <a href="#">Hardware Design</a>
-       </li>
-       
-       <li>
-         <a href="#">Software Design</a>
-       </li>
-       
-       <li>
-         <a href="#">Digital Signage</a>
-       </li>
-       
-       <li>
-         <a href="#">Automation</a>
-       </li>
-       
-       <li>
-         <a href="#">Artificial Intelligence</a>
-       </li>
-       
-       <li>
-         <a href="#">IoT</a>
-       </li>
-     </ul>
-   </li>
-   
-   <li class="nav__item">
-     <h2 class="nav__title">Legal</h2>
-     
-     <ul class="nav__ul">
-       <li>
-         <a href="#">Privacy Policy</a>
-       </li>
-       
-       <li>
-         <a href="#">Terms of Use</a>
-       </li>
-       
-       <li>
-         <a href="#">Sitemap</a>
-       </li>
-     </ul>
-   </li>
- </ul>
- 
- <div class="legal">
-   <p>&copy; 2019 Something. All rights reserved.</p>
- </div>
 </footer>
-   
 
-
-
+    
 
 </body>
 </html>

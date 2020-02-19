@@ -1,11 +1,11 @@
-//Grafico de barras dos livros de Literatura;
+//grafico de barras dos livros de literatura
 
-var graficoBarraLi= document.getElementById("GraficoBarraLI");
+var BarraLiteratura= document.getElementById("GraficoBarraLI");
 
-var x = new Chart(graficoBarraLi,{
+var ax = new Chart(BarraLiteratura,{
     type: 'bar',
     data: {
-        labels: ['PHP POO', 'PHYTON', 'NODE JS'],
+        labels: ['Nove Noites', 'Essa Gente', 'Quincas borba'],
         datasets: [{
             label: 'Livros Mais Vendidos de Literatura',
             data: [300, 400, 600],
@@ -24,14 +24,14 @@ var x = new Chart(graficoBarraLi,{
     }
 });
 
-//grafico de pizza dos livros de informatica
+//grafico pizza dos livros de literatura
 
-var graficoPizzaLi = document.getElementById("GraficosPizzaLI");
+var PizzaLiteratura = document.getElementById("GraficosPizzaLI");
 
-var y = new Chart(graficoPizzaLi,{
+var ay = new Chart(PizzaLiteratura,{
     type: 'pie',
     data: {
-        labels: ['PHP POO', 'PHYTON', 'NODE JS'],
+        labels: ['Nove Noites', 'Essa Gente', 'Quincas borba'],
         datasets: [{
             label: 'Livros Mais Vendidos de Literatura',
             data: [300, 400, 600],
@@ -51,17 +51,17 @@ var y = new Chart(graficoPizzaLi,{
 });
 
 
-//graficos de barras dos livros de Informatica
+//graficos de barras dos livros de informatica
 
-var graficoBarraTI= document.getElementById("GraficoBarraTI");
+var BarraInformatica= document.getElementById("barrainformatica");
 
-var x = new Chart(graficoBarraTI,{
+var gx = new Chart(BarraInformatica,{
     type: 'bar',
     data: {
-        labels: ['QUINCAS BORBA', 'ESSA GENTE', 'O ESPELHO'],
+        labels: ['PHP POO', 'Phyton Automatize', 'JavaScript'],
         datasets: [{
-            label: 'Livros Mais Vendidos de Informatica',
-            data: [320, 200, 600],
+            label: 'Livros Mais Vendidos de Literatura',
+            data: [300, 470, 600],
             backgroundColor: ['rgba(255, 99, 132, 1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)'],
             borderWidth: 1
         }]
@@ -77,17 +77,17 @@ var x = new Chart(graficoBarraTI,{
     }
 });
 
-//grafico de pizza dos livros de informatica
+//grafico pizza dos livros de literatura
 
-var graficoPizzaTI = document.getElementById("GraficosPizzaTI");
+var PizzaInformatica = document.getElementById("pizzainformatica");
 
-var y = new Chart(graficoPizzaTI,{
+var gy = new Chart(PizzaInformatica,{
     type: 'pie',
     data: {
-        labels: ['Livro1', 'Livro 2', 'Livro 3'],
+        labels: ['PHP POO', 'Phyton Automatize', 'JavaScript'],
         datasets: [{
             label: 'Livros Mais Vendidos de Literatura',
-            data: [320, 200, 600],
+            data: [300, 400, 600],
             backgroundColor: ['rgba(255, 99, 132, 1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)'],
             borderWidth: 1
         }]
@@ -102,3 +102,7 @@ var y = new Chart(graficoPizzaTI,{
         }
     }
 });
+
+
+
+
