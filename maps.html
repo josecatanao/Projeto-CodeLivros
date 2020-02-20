@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="maps.css">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+      <header>
+        <h1>&#60;Codelivros&#62;</h1>
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="literatura.html">Literatura</a>
+          <a href="informatica.html">Informática</a>
+          <a href="maps.html">Rota</a>
+          <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+
+
+      <div id="final">
+      <div id="texto">
+        <label>Origem: <input type="text" id="origem" size="50"/></label>
+        <label>Destino: <input type="text" id="destino" size="50"/></label>
+        <input id="botao" type="submit" value="Tracar rota" onclick=" calcularRota()"/>
+      </div>
+        <div id="map"></div>
+      </div>
+<script>
+
+    var directionsService;
+    var directionsRenderer;
+    
+  function initmap() {
+    directionsService = new google.maps.DirectionsService();
+    directionsRenderer = new google.maps.DirectionsRenderer();
+
+  
+
+   var cajazeiras= new google.maps.LatLng(-6.88634, -38.5614);
+   
+
+   var mapOptions = {
+      center: cajazeiras,
+      zoom: 15
+    }
+    
+
+var map= new google.maps.Map(document.getElementById('map'),mapOptions);
+directionsRenderer.setMap(map);
+  }
+
+function calcularRota(){
+
+
+var start = document.getElementById('origem').value;
+var end = document.getElementById('destino').value;
+
+var request ={
+origin: start,
+destination: end,
+travelMode: 'DRIVING'
+};
+directionsService.route(request, function(result, status) {
+    if (status == 'OK') {
+      directionsRenderer.setDirections(result);
+    }
+  });
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbbNxAeSZ_-I3t0exJrGDxSzvf4ahIlRY&callback=initmap"  async defer></script>
+    </body>
+</html>

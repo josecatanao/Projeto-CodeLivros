@@ -1,0 +1,54 @@
+#map{
+    height: 600px; 
+    width: 100%;
+    margin-inline-start: 150px;
+    }
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+background-image: url(map.jpg);
+background-size: cover;
+}
+#origem{
+    border-radius: 20px;
+    background-color: ghostwhite;
+    margin-left: initial;
+    text-align: center;
+    height: 30px;
+}
+
+#destino{
+    border-radius: 20px;
+    background-color: ghostwhite;
+    margin-left: initial;
+    text-align: center;
+    height: 30px;
+}
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#texto{
+    display: flex;
+    flex-direction: column;
+}
+
+#botao{
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    border-radius: 20px;
+    background-color: mediumblue;
+    width: 150px;
+    margin: 10px;
+    margin-inline-start: 100px;
+    border: none;
+    color: white;
+}
