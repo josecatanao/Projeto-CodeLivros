@@ -22,7 +22,6 @@
       <div id="final">
       <div id="texto">
         <label>Origem: <input type="text" id="origem" size="50"/></label>
-        <label>Destino: <input type="text" id="destino" size="50"/></label>
         <input id="botao" type="submit" value="Tracar rota" onclick=" calcularRota()"/>
       </div>
         <div id="map"></div>
@@ -55,7 +54,7 @@ function calcularRota(){
 
 
 var start = document.getElementById('origem').value;
-var end = document.getElementById('destino').value;
+var end = 'Av. Pres. João Pessoa, 71 - Centro, Cajazeiras - PB';
 
 var request ={
 origin: start,

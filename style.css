@@ -261,6 +261,7 @@ div i{
   }
 
   footer{
+    margin-top: 200px;
     color: black;
     display: flex;
     flex-direction: column;
@@ -280,7 +281,6 @@ div i{
   .grafico-informatica{
     width: 50%;
     height: 300px;
-    border: 1px solid red;
     margin: 0 10px;
     display: flex;
     justify-content: center;
@@ -290,7 +290,6 @@ div i{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
   }
 .iframe{
   width:560px;
