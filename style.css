@@ -277,16 +277,28 @@ div i{
     margin: 3px;
   }
 
-  .graficoLiteratura{
+  .grafico-informatica{
+    width: 50%;
+    height: 300px;
+    border: 1px solid red;
+    margin: 0 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: -200px;
+    justify-content: center;
   }
+  .todos-os-graficos{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+  }
+.iframe{
+  width:560px;
+  height:315px;
+  margin: -105px auto 50px auto;
+  display: block;
+}
 
-  .graficoLiteratura div{
-    width: 800px;
-  }
 
 
   
